@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
+  def check_for_authentication
+    unless logged_in?
+      redirect_to :login
+    end
+  end
+
   private
 
   def current_user
