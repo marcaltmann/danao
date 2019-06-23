@@ -1,18 +1,16 @@
 class ThoughtsController < ApplicationController
   before_action :set_thought, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /thoughts
   # GET /thoughts.json
   def index
-    check_for_authentication
-
     @thoughts = Thought.all
   end
 
   # GET /thoughts/1
   # GET /thoughts/1.json
   def show
-    check_for_authentication
   end
 
   # GET /thoughts/new
