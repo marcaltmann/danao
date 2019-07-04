@@ -1,3 +1,3 @@
 class Thought < ApplicationRecord
-  belongs_to :reference
+  belongs_to :source
 end
