@@ -29,7 +29,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'mini_magick', '~> 4.8'
 
 # Authentication
-gem 'devise', '~> 4.6.2'
+gem 'devise', '~> 4.7.1'
 
 gem 'faker', '~> 1.9.3'
 
